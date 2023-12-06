@@ -77,8 +77,7 @@ Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und 
 |Firma:                    |@(Projekt.DieseFirma.name1)      |
 |                          |                                 |
 |Anschrift:                |@(Projekt.DieseFirma.strasse)    |
-|                          |@(Projekt.DieseFirma.plz)        |
-|                          |@(Projekt.DieseFirma.ort)        | 
+|                          |@(Projekt.DieseFirma.plz) @(Projekt.DieseFirma.ort)        | 
 |                          |                                 |
 |Bankverbindungen:         |@(Projekt.DieseFirma.bank1name)  |
 |                          |@(Projekt.DieseFirma.bank1iban)  |
@@ -181,6 +180,10 @@ Wann ist eine Inventur durchzuführen?
 * [[ ]] jeweils zum 30.06. und 31.12. eines Kalenderjahres
 * [[x]] bei Auflösung oder Verkauf eines Unternehmens
 
+
+### Aufgabe: Inventur
+
+@(Aufgabe("4", "inventar", "ag0001"))
 
 
 ## Die Bilanz
