@@ -12,10 +12,10 @@ subtitle: Eine kurze Übersicht zum Wiedereinstieg
 shorttitle: Buchführung, Wiedereinstieg 
 cover: titelbild.png
 date: Dezember 2023
-git: 391b3ff
+git: d01a980
 
 
-version: 391b3ff
+version: d01a980
 
 -->
 
@@ -79,8 +79,7 @@ Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und 
 |Firma:                    |Rat-Pack-Sound-OHG      |
 |                          |                                 |
 |Anschrift:                |Am Speiergarten 13    |
-|                          |65191        |
-|                          |Wiesbaden        | 
+|                          |65191 Wiesbaden        | 
 |                          |                                 |
 |Bankverbindungen:         |Postbank Frankfurt  |
 |                          |DE56 5001 0060 0445 3228 75  |
