@@ -1,15 +1,28 @@
+---
+language: de
+author:  Jörg Hofmann
+email: joerg.hofmann@pecunia-non-olet.com
+title: Buchhaltung in Pillenform
+pagetitle: Buchführung
+subtitle: Eine kurze Übersicht zum Wiedereinstieg
+shorttitle: Buchführung, Wiedereinstieg
+cover: titelbild.png
+date: Dezember 2023
+git: 9cad3c7
+
+---
 # @title
 
 <h3>@subtitle</h3>
 
 ![Titelbild](images/titelbild.png "Titelbild")
 
-@(br)
-@author@(br)
+<br />
+@author<br />
 @mymail
 
-@(br)
-@date@(br)
+<br />
+@date<br />
 Git: @git
 
 ## Einleitung
@@ -45,7 +58,7 @@ In diesem Dokument finden sie viele Links zu externen Quellen. Nun ist das Inter
 
 ### Unsere Firma, die Rat-Pack-Sound-OHG
 
-Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und Sammy D.\ die Rat-Pack-Sound-OHG. Die Firma hat sich auf die Fertigung hochwertiger HiFi-Verstärker spezialisiert und beliefert Einzelhändlerinnen im gesamten europäischen Raum. Um ihren Kundeninnen ein komplettes Angebot erstellen zu können, werden weitere Komponenten dazu gekauft. Die eigenen Erzeugnisse sind@(br)@(br)
+Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und Sammy D.\ die Rat-Pack-Sound-OHG. Die Firma hat sich auf die Fertigung hochwertiger HiFi-Verstärker spezialisiert und beliefert Einzelhändlerinnen im gesamten europäischen Raum. Um ihren Kundeninnen ein komplettes Angebot erstellen zu können, werden weitere Komponenten dazu gekauft. Die eigenen Erzeugnisse sind<br /><br />
 
 * Verstärker "Röhre 1"
 * Verstärker "Röhre 2"
@@ -55,30 +68,32 @@ Auf der Suche nach einer seriösen Tätigkeit gründeten Frank S., Dean M.\ und 
 #### Firmenangaben
 |                          |                                 |
 |-------------------------:|:--------------------------------|
-|Firma:                    |@(Projekt.DieseFirma.name1)      |
+|Firma:                    |Rat-Pack-Sound-OHG      |
 |                          |                                 |
-|Anschrift:                |@(Projekt.DieseFirma.strasse)    |
-|                          |@(Projekt.DieseFirma.plz) @(Projekt.DieseFirma.ort)        | 
+|Anschrift:                |Am Speiergarten 13    |
+|                          |65191 Wiesbaden        | 
 |                          |                                 |
-|Bankverbindungen:         |@(Projekt.DieseFirma.bank1name)  |
-|                          |@(Projekt.DieseFirma.bank1iban)  |
-|                          |@(Projekt.DieseFirma.bank1bic)   |
+|Bankverbindungen:         |Postbank Frankfurt  |
+|                          |DE56 5001 0060 0445 3228 75  |
+|                          |PBNKDEFFXXX   |
 |                          |                                 |
-|                          |@(Projekt.DieseFirma.bank2name)  |
-|                          |@(Projekt.DieseFirma.bank2iban)  |
-|                          |@(Projekt.DieseFirma.bank2bic)   |
+|                          |Nassauische Sparkasse (NASPA)  |
+|                          |DE32 5105 0015 0034 2667 86  |
+|                          |NASSDE55XXX   |
 |                          |                                 |
-|USt-IdNr.:                |@(Projekt.DieseFirma.ustid)      |
+|USt-IdNr.:                |DE 347 993 141      |
 |                          |                                 |
-|Kontenrahmen:             |@(Projekt.DieseFirma.kontenrahmen)|
+|Kontenrahmen:             |SKR03|
 |                          |                                 |
-|Wirtschaftsjahr:          |@(Projekt.DieseFirma.wirtschaftsjahr), @(Projekt.DieseFirma.buchungsperioden) Buchungsperioden|
+|Wirtschaftsjahr:          |Kalenderjahr, 13 Buchungsperioden|
 |                          |                                 |
-|Gewinnermittlungsart:     |@(Projekt.DieseFirma.gewinnermittlung)| 
+|Gewinnermittlungsart:     |Betriebsvermögensvergleich, Handelsbilanz| 
 |                          |                                 |
-|Art der Besteuerung:      |@(Projekt.DieseFirma.ustbesteuerung)|
+|Art der Besteuerung:      |Sollversteuerung|
 |                          |                                 |
-|Erstes Buchungsjahr:      |@(Projekt.jahr)                          |
+|Erstes Buchungsjahr:      |2021                          |
+
+
 
 
 

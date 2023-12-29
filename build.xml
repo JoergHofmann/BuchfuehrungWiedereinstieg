@@ -43,6 +43,43 @@
 		</copy>
 	</target>
 
+	<target name="copy4html" unless="done">
+	    <copy todir="0_OUT/bilder" overwrite="true">
+                <fileset dir="bilder" includes="*.png" />
+		<fileset dir="bilder" includes="*.svg" />
+		<fileset dir="bilder" includes="*.gif" />
+		<fileset dir="bilder" includes="*.jpg" />
+		<fileset dir="bilder" includes="*.pdf" />
+	    </copy>
+	    <copy todir="0_OUT/scripts" overwrite="true">
+	        <fileset dir="scripts" includes="*.js" />
+	    </copy>
+	    <copy todir="0_OUT/formate" overwrite="true">
+	        <fileset dir="formate" includes="*.css" />
+	    </copy>
+            <copy todir="0_TMP" >
+                <fileset dir=".">
+                    <include name="*.lua" />
+                    <include name="*.yaml" />
+                    <include name="*.tex" />
+                    <include name="*.html" />
+                    <include name="*.md" />
+                </fileset>
+            </copy>
+	</target>
+
+	<target name="html" depends="prepare" unless="done">
+	    <antcall target="copy4html" />
+	    <exec executable="ypp" dir="0_TMP/" output="index.md">
+                <arg line="-l html5.lua ${ant.project.name}Index.md" />
+	    </exec>
+	    <exec executable="pandoc" dir="0_TMP/">
+                <arg line="index.md -t html -o index.html" />
+            </exec>
+            <copy file="0_TMP/index.html" tofile="0_OUT/index.html" />
+	    <property name="done" value="done" />
+	</target>
+
 	<target name="lia" depends="prepare" unless="done">
 	    <antcall target="copy4lia" />
 	    <exec executable="ypp" output="0_LiaOut/${ant.project.name}.md" logError="true">
